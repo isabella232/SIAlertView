@@ -733,7 +733,7 @@ static SIAlertView *__si_alert_current_view;
 #ifndef __IPHONE_6_0
                        self.titleLabel.font.pointSize * self.titleLabel.minimumScaleFactor
 #else
-                       self.titleLabel.minimumFontSize
+                       self.titleLabel.minimumScaleFactor
 #endif
                                 actualFontSize:nil
                                       forWidth:CONTAINER_WIDTH - CONTENT_PADDING_LEFT * 2
@@ -802,7 +802,7 @@ static SIAlertView *__si_alert_current_view;
 #ifndef __IPHONE_6_0
             self.titleLabel.minimumScaleFactor = 0.75;
 #else
-            self.titleLabel.minimumFontSize = self.titleLabel.font.pointSize * 0.75;
+            self.titleLabel.minimumScaleFactor = self.titleLabel.font.pointSize * 0.75;
 #endif
 			[self.containerView addSubview:self.titleLabel];
 #if DEBUG_LAYOUT
