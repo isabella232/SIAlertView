@@ -194,9 +194,9 @@ static SIAlertView *__si_alert_current_view;
     appearance.viewBackgroundColor = [UIColor whiteColor];
     appearance.titleColor = [UIColor blackColor];
     appearance.messageColor = [UIColor darkGrayColor];
-    appearance.titleFont = [UIFont boldSystemFontOfSize:20];
-    appearance.messageFont = [UIFont systemFontOfSize:16];
-    appearance.buttonFont = [UIFont systemFontOfSize:[UIFont buttonFontSize]];
+    appearance.titleFont = [RTRFonts proximaNovaSemibold:20];
+    appearance.messageFont = [RTRFonts proximaNovaRegular:16];
+    appearance.buttonFont = [RTRFonts proximaNovaRegular:[UIFont buttonFontSize]];
     appearance.cornerRadius = 2;
     appearance.shadowRadius = 8;
 }
